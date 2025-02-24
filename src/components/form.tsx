@@ -16,6 +16,7 @@ import {
   FormMessage,
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
+import { Link } from 'react-router-dom'
 
 // eslint-disable-next-line prefer-regex-literals
 const phoneValidation = new RegExp(/^\(?\d{2}\)?\s?9\d{4}\s?\d{4}$/)
@@ -52,14 +53,14 @@ export function InputForm() {
   return (
     <div className="flex w-full flex-col items-center">
       <div className="flex h-16 w-full items-center justify-between gap-6 bg-gray-800 px-6">
-        <a href="/">
+        <Link to="/">
           <div className="flex cursor-pointer items-center justify-center">
             <span className="mr-2 text-2xl font-semibold text-white">
-              ContabilSim
+              Facilita
             </span>
             <Calculator className="h-6 w-6 fill-white" />
           </div>
-        </a>
+        </Link>
         <div>
           <span className="text-2xl text-white">
             Cadastro de abertura de empresa
@@ -137,13 +138,13 @@ export function InputForm() {
         </Button>
       </div>
       <div className="hidden lg:flex lg:w-1/2">
-        <a href="/solicite-uma-proposta">
+        <Link to="/solicite-uma-proposta">
           <img
             src={Banner}
             alt="banner"
             className="fixed right-0 top-16 h-[calc(100vh-4rem)] w-auto object-cover"
           />
-        </a>
+        </Link>
       </div>
     </div>
   )

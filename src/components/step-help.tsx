@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
 import { Separator } from './ui/separator'
 
@@ -68,7 +69,7 @@ export default function StepHelp() {
             variant="outline"
             className="h-11 w-60 rounded-3xl text-lg font-medium"
           >
-            <a href="/plans">Conhecer nossos planos</a>
+            <Link to="/plans">Conhecer nossos planos</Link>
           </Button>
         </div>
       </div>

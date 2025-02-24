@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import { Link } from 'react-router-dom'
 
 export function About() {
   const data = [
@@ -54,7 +55,7 @@ export function About() {
         <CarouselContent>
           {data.map((item) => (
             <CarouselItem key={item.id} className="sm:basis-1/2 lg:basis-1/3">
-              <a href={item.link}>
+              <Link to={item.link}>
                 <Card className="h-[400px] w-full sm:w-[280px]">
                   <CardContent className="flex flex-col items-start justify-center gap-6 p-6">
                     <h1 className="text-xl font-semibold text-gray-900">
@@ -84,7 +85,7 @@ export function About() {
                     </div>
                   </CardContent>
                 </Card>
-              </a>
+              </Link>
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -108,7 +109,7 @@ export function About() {
           variant="outline"
           className="h-11 w-60 rounded-3xl text-lg font-medium"
         >
-          <a href="/plans">Conhecer nossos planos</a>
+          <Link to="/plans">Conhecer nossos planos</Link>
         </Button>
       </div>
     </div>

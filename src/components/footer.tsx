@@ -57,18 +57,18 @@ export function Footer() {
             © 2024 AccountPro. All rights reserved.
           </p>
           <div className="mt-4 flex space-x-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <Link to="#" className="text-gray-400 hover:text-white">
               <Facebook className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link to="#" className="text-gray-400 hover:text-white">
               <Twitter className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link to="#" className="text-gray-400 hover:text-white">
               <Linkedin className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link to="#" className="text-gray-400 hover:text-white">
               <Instagram className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

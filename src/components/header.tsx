@@ -45,11 +45,11 @@ export function Header() {
       className={`z-50 flex w-full justify-center border-b ${isSticky ? 'fixed left-0 top-0 bg-white shadow-lg' : ''}`}
     >
       <div className="flex h-16 w-[1440px] items-center gap-6 px-6">
-        <a href="/">
+        <Link to="/">
           <div className="flex cursor-pointer items-center justify-center">
             <img src={Logo} alt="logo_facilita" />
           </div>
-        </a>
+        </Link>
 
         <div className="hidden space-x-4 md:flex">
           <NavigationMenuDemo />
@@ -76,11 +76,11 @@ export function Header() {
               <SheetHeader></SheetHeader>
 
               <div className="flex w-full flex-col space-y-4 p-4">
-                <a href="/">
+                <Link to="/">
                   <div className="flex cursor-pointer items-center justify-center">
                     <img src={Logo} alt="logo_facilita" />
                   </div>
-                </a>
+                </Link>
                 <nav className="flex flex-col space-y-4">
                   <div className="relative w-full">
                     <button
@@ -99,19 +99,19 @@ export function Header() {
                     >
                       <ul className="flex flex-col space-y-2">
                         <li className="p-3 text-azul no-underline hover:text-gray-400 hover:underline">
-                          <a href="/abrir-empresa">Abrir Empresa grátis</a>
+                          <Link to="/abrir-empresa">Abrir Empresa grátis</Link>
                         </li>
                         <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
-                          <a href="/certificado-digital">Certificado digital</a>
+                          <Link to="/certificado-digital">Certificado digital</Link>
                         </li>
                         <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
-                          <a href="/deixar-de-ser-mei">Deixar de ser MEI</a>
+                          <Link to="/deixar-de-ser-mei">Deixar de ser MEI</Link>
                         </li>
                         <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
-                          <a href="/trocar-contador">Trocar de contador</a>
+                          <Link to="/trocar-contador">Trocar de contador</Link>
                         </li>
                         <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
-                          <a href="#">Contabilidade completa</a>
+                          <Link to="#">Contabilidade completa</Link>
                         </li>
                       </ul>
                     </div>

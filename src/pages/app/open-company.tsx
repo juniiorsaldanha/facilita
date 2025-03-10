@@ -19,6 +19,44 @@ export function OpenCompany() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [observation, setObservation] = useState('');
+
+  const TELEGRAM_BOT_TOKEN = '7289008410:AAF-VFOIVfwSwgyLRdUkrm56PJ_i_90ZTHs' // Substitua pelo seu token
+  const TELEGRAM_CHAT_ID = '-4578405093'
+
+  const sendWhatsAppMessage = () => {
+    const message = `Olá, tudo bem? Meu nome é ${name}\n. Desejo saber mais informações sobre como abrir minha empresa.`
+    const url = `https://wa.me/5585994449862?text=${encodeURIComponent(message)}`
+    window.open(url, '_blank')
+  }
+
+  const sendTelegramMessage = () => {
+    const message = `Nome: ${name}\nEmail: ${email}\nCelular: ${phone}\nObservações: ${observation}`
+
+    fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.ok) {
+          console.log('Mensagem enviada para o Telegram com sucesso!')
+        } else {
+          console.error(
+            'Erro ao enviar mensagem para o Telegram:',
+            data.description,
+          )
+        }
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar mensagem para o Telegram:', error)
+      })
+  } 
   
   const addresses = [
     {
@@ -47,24 +85,59 @@ export function OpenCompany() {
       </div>
 
       <section className="mt-10 flex w-full flex-col items-center justify-center gap-6 lg:flex-row">
-        <div className="flex w-full max-w-full flex-col space-y-4 md:max-w-lg">
+      <div className="flex w-full max-w-full flex-col space-y-4 md:max-w-lg">
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="name">Nome</Label>
-            <Input type="text" id="name" placeholder="Nome completo" value={name} onChange={(e) => setName(e.target.value)} />
+            <Input
+              type="text"
+              id="name"
+              placeholder="Nome completo"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
+
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="email">Email</Label>
-            <Input type="email" id="email" placeholder="Digite seu e-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <Input
+              type="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
+
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="phone">Celular</Label>
-            <Input type="text" id="phone" placeholder="Seu principal número" value={phone} onChange={(e) => setPhone(e.target.value)} />
+            <Input
+              type="text"
+              id="phone"
+              placeholder="Seu principal número"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
           </div>
+
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="observation">Observações</Label>
-            <Textarea id="observation" placeholder="Observações" value={observation} onChange={(e) => setObservation(e.target.value)} />
+            <Textarea
+              id="observation"
+              placeholder="Observações"
+              value={observation}
+              onChange={(e) => setObservation(e.target.value)}
+            />
           </div>
-          <Button className="w-full max-w-sm bg-azul text-white hover:bg-blue-900">Enviar</Button>
+
+          <Button
+            className="w-full max-w-sm bg-azul text-white hover:bg-blue-900"
+            onClick={() => {
+              sendWhatsAppMessage()
+              sendTelegramMessage()
+            }}
+          >
+            Enviar
+          </Button>
         </div>
         
         <article className="flex w-full max-w-full flex-col items-center gap-4 md:max-w-lg">

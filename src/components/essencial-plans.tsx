@@ -1,4 +1,5 @@
 import Check from '@/assets/check.svg'
+import XIcon from '@/assets/x.svg'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
@@ -8,173 +9,98 @@ const sendWhatsAppMessage = (planTitle: string) => {
   window.open(url, '_blank')
 }
 
+const benefitsList = [
+  'Gestão completa do dia a dia contábil do seu negócio',
+  'Processo de abertura do seu CNPJ grátis',
+  'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
+  'Certificado digital incluso',
+  'Painel de RH com folha de sócios e funcionários',
+  'Gerente de Conta exclusivo para cuidar de tudo para você',
+  'Importação de notas fiscais em qualquer município',
+  'Conciliação financeira feita por experts',
+  'Consultoria contábil online com time de contadores especialistas',
+  'Declaração do Imposto de Renda de Pessoa Física',
+  'Atendimento até às 21h com o seu gerente de conta',
+  'Agendamentos de pagamentos de contas',
+]
+
 const plans = {
   MEI: [
     {
       title: 'Plano Inicial',
       price: '119,90',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        // 'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        // 'Gerente de Conta exclusivo para cuidar de tudo para você',
-        // 'Importação de notas fiscais em qualquer município',
-        // 'Conciliação financeira feita por experts',
-        // 'Consultoria contábil online com time de contadores especialistas',
-        // 'Declaração do Imposto de Renda de Pessoa Física',
-        // 'Atendimento até às 21h com o seu gerente de conta',
-        // 'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.slice(0, 4).map((benefit, index) => ({
+        text: benefit,
+        available: index < 3, // Apenas os 3 primeiros disponíveis, o 4º é ❌
+      })),
     },
     {
       title: 'Plano Avançado',
       price: '179,90',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        // 'Certificado digital incluso',
-         'Painel de RH com folha de sócios e funcionários',
-        // 'Gerente de Conta exclusivo para cuidar de tudo para você',
-        // 'Importação de notas fiscais em qualquer município',
-        // 'Conciliação financeira feita por experts',
-        // 'Consultoria contábil online com time de contadores especialistas',
-        // 'Declaração do Imposto de Renda de Pessoa Física',
-        // 'Atendimento até às 21h com o seu gerente de conta',
-        // 'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.slice(0, 4).map((benefit) => ({
+        text: benefit,
+        available: true, // Todos os 4 disponíveis
+      })),
     },
   ],
   SIMPLES: [
     {
       title: 'Plano Bronze',
       price: '209,00',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        'Gerente de Conta exclusivo para cuidar de tudo para você',
-        'Importação de notas fiscais em qualquer município',
-        'Conciliação financeira feita por experts',
-        'Consultoria contábil online com time de contadores especialistas',
-        'Declaração do Imposto de Renda de Pessoa Física',
-        'Atendimento até às 21h com o seu gerente de conta',
-        'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.map((benefit, index) => ({
+        text: benefit,
+        available: index < 4, // Até o 4º benefício
+      })),
     },
     {
       title: 'Plano Prata',
       price: '249,00',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        'Gerente de Conta exclusivo para cuidar de tudo para você',
-        'Importação de notas fiscais em qualquer município',
-        'Conciliação financeira feita por experts',
-        'Consultoria contábil online com time de contadores especialistas',
-        'Declaração do Imposto de Renda de Pessoa Física',
-        'Atendimento até às 21h com o seu gerente de conta',
-        'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.map((benefit, index) => ({
+        text: benefit,
+        available: index < 5, // Até o 5º benefício
+      })),
     },
     {
       title: 'Plano Ouro',
       price: '389,00',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        'Gerente de Conta exclusivo para cuidar de tudo para você',
-        'Importação de notas fiscais em qualquer município',
-        'Conciliação financeira feita por experts',
-        'Consultoria contábil online com time de contadores especialistas',
-        'Declaração do Imposto de Renda de Pessoa Física',
-        'Atendimento até às 21h com o seu gerente de conta',
-        'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.map((benefit, index) => ({
+        text: benefit,
+        available: index < 9, // Até o 9º benefício
+      })),
     },
     {
       title: 'Plano Diamante',
       price: '689,00',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        'Gerente de Conta exclusivo para cuidar de tudo para você',
-        'Importação de notas fiscais em qualquer município',
-        'Conciliação financeira feita por experts',
-        'Consultoria contábil online com time de contadores especialistas',
-        'Declaração do Imposto de Renda de Pessoa Física',
-        'Atendimento até às 21h com o seu gerente de conta',
-        'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.map((benefit) => ({
+        text: benefit,
+        available: true, // Todos os benefícios disponíveis
+      })),
     },
   ],
   'SIMPLES COMÉRCIO': [
     {
       title: 'Plano Empreendedor',
       price: '389,00',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        'Gerente de Conta exclusivo para cuidar de tudo para você',
-        'Importação de notas fiscais em qualquer município',
-        'Conciliação financeira feita por experts',
-        'Consultoria contábil online com time de contadores especialistas',
-        'Declaração do Imposto de Renda de Pessoa Física',
-        'Atendimento até às 21h com o seu gerente de conta',
-        'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.map((benefit, index) => ({
+        text: benefit,
+        available: index < 5, // Até o 5º benefício
+      })),
     },
     {
       title: 'Plano Empresarial',
       price: '489,00',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        'Gerente de Conta exclusivo para cuidar de tudo para você',
-        'Importação de notas fiscais em qualquer município',
-        'Conciliação financeira feita por experts',
-        'Consultoria contábil online com time de contadores especialistas',
-        'Declaração do Imposto de Renda de Pessoa Física',
-        'Atendimento até às 21h com o seu gerente de conta',
-        'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.map((benefit, index) => ({
+        text: benefit,
+        available: index < 9, // Até o 9º benefício
+      })),
     },
     {
       title: 'Plano Executivo',
       price: '849,00',
-      benefits: [
-        'Gestão completa do dia a dia contábil do seu negócio',
-        'Processo de abertura do seu CNPJ grátis',
-        'Atendimento via chat, e-mail, whatsapp e telefone, das 8h às 18h',
-        'Certificado digital incluso',
-        'Painel de RH com folha de sócios e funcionários',
-        'Gerente de Conta exclusivo para cuidar de tudo para você',
-        'Importação de notas fiscais em qualquer município',
-        'Conciliação financeira feita por experts',
-        'Consultoria contábil online com time de contadores especialistas',
-        'Declaração do Imposto de Renda de Pessoa Física',
-        'Atendimento até às 21h com o seu gerente de conta',
-        'Agendamentos de pagamentos de contas',
-      ],
+      benefits: benefitsList.map((benefit) => ({
+        text: benefit,
+        available: true, // Todos os benefícios disponíveis
+      })),
     },
   ],
 }
@@ -222,12 +148,12 @@ export function EssencialPlans() {
                       {plan.benefits.map((benefit, bIndex) => (
                         <li key={bIndex} className="flex items-start gap-2">
                           <img
-                            src={Check}
-                            alt="icon"
+                            src={benefit.available ? Check : XIcon} // Mostra o ícone certo
+                            alt={benefit.available ? 'Disponível' : 'Indisponível'}
                             className="mt-1 h-4 w-4"
                           />
-                          <span className="text-sm text-slate-500">
-                            {benefit}
+                          <span className={`text-sm ${benefit.available ? 'text-azul' : 'text-gray-400'}`}>
+                            {benefit.text}
                           </span>
                         </li>
                       ))}

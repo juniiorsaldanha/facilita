@@ -116,18 +116,18 @@ export function Header() {
                       </ul>
                     </div>
                   </div>
-                  <a
-                    href="/plans"
+                  <Link
+                    to="/plans"
                     className="text-azul-50  hover:text-azul-400 border-b p-4"
                   >
                     Planos
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="text-azul-50  border-b p-4 hover:text-gray-400"
                   >
                     Como Funciona
-                  </a>
+                  </Link>
                 </nav>
                 <Button
                   variant="default"

@@ -99,7 +99,7 @@ export function About() {
         >
           <a
             target="_blank"
-            href="https://wa.me/5588999999878?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20funciona%20a%20ContabilSim"
+            href="https://wa.me/5585994449862?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20funciona%20a%20ContabilSim"
             rel="noreferrer"
           >
             Entrar em contato

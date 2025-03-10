@@ -25,7 +25,7 @@ export function OpenCompany() {
 
   const sendWhatsAppMessage = () => {
     const message = `Olá, tudo bem? Meu nome é ${name}\n. Desejo saber mais informações sobre como abrir minha empresa.`
-    const url = `https://wa.me/5585992004669?text=${encodeURIComponent(message)}`
+    const url = `https://wa.me/5585994449862?text=${encodeURIComponent(message)}`
     window.open(url, '_blank')
   }
 

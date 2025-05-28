@@ -59,7 +59,7 @@ export default function StepHelp() {
           >
             <a
               target="_blank"
-              href="https://wa.me/5585994449862?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20deixar%20de%20ser%20MEI"
+              href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20deixar%20de%20ser%20MEI"
               rel="noreferrer"
             >
               Entrar em contato

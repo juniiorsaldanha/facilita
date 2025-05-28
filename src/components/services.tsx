@@ -46,8 +46,8 @@ const services = [
     icon: Receipt,
   },
   {
-    title: 'Auditoria',
-    description: 'Auditoria contábil, fiscal e trabalhista para sua segurança.',
+    title: 'Certificado Digital',
+    description: 'Assinatura eletrônica segura para acesso a serviços do governo e emissão de documentos fiscais.',
     icon: Shield,
   },
 ]

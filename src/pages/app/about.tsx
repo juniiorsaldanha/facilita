@@ -15,7 +15,7 @@ export function About() {
       id: 1,
       titulo: 'Abrir Empresa grátis',
       descricao:
-        'Com a contabilSim, abrir sua empresa é simples, rápido e o melhor: gratuito! Nossa equipe de especialistas está pronta para te ajudar em todas as etapas, desde a escolha do tipo de empresa até o registro formal nos órgãos competentes.',
+        'Com a Facilita, abrir sua empresa é simples, rápido e o melhor: gratuito! Nossa equipe de especialistas está pronta para te ajudar em todas as etapas, desde a escolha do tipo de empresa até o registro formal nos órgãos competentes.',
       link: '/abrir-empresa',
     },
     {
@@ -44,7 +44,7 @@ export function About() {
   return (
     <div className="flex w-full flex-col items-center justify-center bg-slate-100 px-4 py-12 sm:py-24">
       <h1 className="mb-10 text-center text-3xl font-semibold text-azul sm:text-4xl">
-        Como funciona a ContabilSim?
+        Como funciona a Facilita?
       </h1>
       <Carousel
         opts={{
@@ -99,7 +99,7 @@ export function About() {
         >
           <a
             target="_blank"
-            href="https://wa.me/5585994449862?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20funciona%20a%20ContabilSim"
+            href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20funciona%20a%Facilita"
             rel="noreferrer"
           >
             Entrar em contato

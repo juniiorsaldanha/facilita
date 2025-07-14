@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import Banner from '@/assets/banner3.png'
+import ImageHome from '@/assets/img-home.png'
 
 import { Button } from './ui/button'
 
@@ -28,8 +28,8 @@ export function BannerWithTittle() {
         </div>
         <div className="flex-1">
           <img
-            src={Banner}
-            alt="banner3"
+            src={ImageHome}
+            alt="img-home"
             className="h-auto w-full rounded-xl border-2 border-slate-600 object-contain"
           />
         </div>

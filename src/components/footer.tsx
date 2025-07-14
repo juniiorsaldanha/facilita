@@ -46,7 +46,7 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Rua Costa Barros, 915, Sala 301</li>
               <li>Fortaleza, Ceará</li>
-              <li>Whatsapp: (85) 9 9444-9862</li>
+              <li>Whatsapp: (11) 99395-3519</li>
               <li>Email: facilitacontabilidadeofc@gmail.com</li>
             </ul>
           </div>

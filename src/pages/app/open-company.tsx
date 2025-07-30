@@ -24,7 +24,7 @@ export function OpenCompany() {
   const TELEGRAM_CHAT_ID = '-4578405093'
 
   const sendWhatsAppMessage = () => {
-    const message = `Olá, tudo bem? Meu nome é ${name}\n. Desejo saber mais informações sobre como abrir minha empresa.`
+    const message = `Desejo saber mais informações sobre como abrir minha empresa.`
     const url = `https://wa.me/5511993953519?text=${encodeURIComponent(message)}`
     window.open(url, '_blank')
   }

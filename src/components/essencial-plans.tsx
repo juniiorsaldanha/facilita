@@ -3,8 +3,8 @@ import XIcon from "@/assets/x.svg";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const sendWhatsAppMessage = (planTitle: string) => {
-  const message = `Olá, tudo bem? Desejo saber mais informações sobre o plano "${planTitle}".`;
+const sendWhatsAppMessage = () => {
+  const message = `Desejo saber mais informações sobre os planos.`;
   const url = `https://wa.me/5511993953519?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 };
@@ -170,7 +170,7 @@ export function EssencialPlans() {
                     <Button
                       variant="default"
                       className="mt-4 w-full rounded-xl border-2 border-slate-800 bg-azul text-white hover:bg-slate-700"
-                      onClick={() => sendWhatsAppMessage(plan.title)}
+                      onClick={() => sendWhatsAppMessage()}
                     >
                       Contratar
                     </Button>

@@ -93,18 +93,19 @@ export function About() {
         <CarouselNext />
       </Carousel>
       <div className="flex w-full flex-col items-center justify-center gap-4 pt-12 sm:flex-row">
+        <a
+          target="_blank"
+          href='https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos.'
+          rel="noreferrer"
+          className='w-60'
+        >
         <Button
           variant="default"
           className="h-11 w-60 rounded-3xl bg-azul text-lg font-medium hover:bg-gray-700"
         >
-          <a
-            target="_blank"
-            href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20funciona%20a%Facilita"
-            rel="noreferrer"
-          >
             Entrar em contato
-          </a>
         </Button>
+          </a>
         <Button
           variant="outline"
           className="h-11 w-60 rounded-3xl text-lg font-medium"

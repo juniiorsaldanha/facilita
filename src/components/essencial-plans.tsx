@@ -3,12 +3,6 @@ import XIcon from "@/assets/x.svg";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const sendWhatsAppMessage = () => {
-  const message = `Desejo saber mais informações sobre os planos.`;
-  const url = `https://wa.me/5511993953519?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
-};
-
 const benefitsList = [
   "Gestão completa do dia a dia contábil do seu negócio",
   "Processo de abertura do seu CNPJ grátis",
@@ -167,13 +161,19 @@ export function EssencialPlans() {
                       </ul>
                     </div>
 
+                    <a
+                    target="_blank" 
+                    href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos."
+                    rel="noreferrer"
+                    className="w-full max-w-sm"
+                    >
                     <Button
                       variant="default"
                       className="mt-4 w-full rounded-xl border-2 border-slate-800 bg-azul text-white hover:bg-slate-700"
-                      onClick={() => sendWhatsAppMessage()}
                     >
                       Contratar
                     </Button>
+                    </a>
                   </div>
                 </div>
               ))}

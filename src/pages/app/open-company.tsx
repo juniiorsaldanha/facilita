@@ -23,12 +23,6 @@ export function OpenCompany() {
   const TELEGRAM_BOT_TOKEN = '7289008410:AAF-VFOIVfwSwgyLRdUkrm56PJ_i_90ZTHs' // Substitua pelo seu token
   const TELEGRAM_CHAT_ID = '-4578405093'
 
-  const sendWhatsAppMessage = () => {
-    const message = `Desejo saber mais informações sobre como abrir minha empresa.`
-    const url = `https://wa.me/5511993953519?text=${encodeURIComponent(message)}`
-    window.open(url, '_blank')
-  }
-
   const sendTelegramMessage = () => {
     const message = `Nome: ${name}\nEmail: ${email}\nCelular: ${phone}\nObservações: ${observation}`
 
@@ -129,15 +123,20 @@ export function OpenCompany() {
             />
           </div>
 
+          <a 
+          target="_blank"
+          href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20abrir%20minha%20empresa"
+          rel="noreferrer"
+          className='w-full max-w-sm'>
           <Button
             className="w-full max-w-sm bg-azul text-white hover:bg-blue-900"
             onClick={() => {
-              sendWhatsAppMessage()
               sendTelegramMessage()
             }}
           >
-            Enviar
+              Enviar
           </Button>
+          </a>
         </div>
         
         <article className="flex w-full max-w-full flex-col items-center gap-4 md:max-w-lg">

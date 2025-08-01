@@ -53,18 +53,19 @@ export default function StepHelp() {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center gap-4 pt-10 md:flex-row">
+          <a
+            target="_blank"
+            href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20deixar%20de%20ser%20MEI"
+            rel="noreferrer"
+            className='w-full max-w-sm'
+          >
           <Button
             variant="default"
             className="bg-azul h-11 w-60 rounded-3xl text-lg font-medium hover:bg-gray-700"
           >
-            <a
-              target="_blank"
-              href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20deixar%20de%20ser%20MEI"
-              rel="noreferrer"
-            >
               Entrar em contato
-            </a>
           </Button>
+          </a>
           <Button
             variant="outline"
             className="h-11 w-60 rounded-3xl text-lg font-medium"

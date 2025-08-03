@@ -1,4 +1,6 @@
-import * as React from 'react';
+import * as React from 'react'
+import { Link } from 'react-router-dom'
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -7,16 +9,17 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
-import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
+} from '@/components/ui/navigation-menu'
+import { cn } from '@/lib/utils'
 
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu>
       <NavigationMenuList className="flex-col items-start gap-4 md:flex-row">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Serviços</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-white font-extrabold text-[#11B856] hover:bg-[#11B856] hover:text-white">
+            Serviços
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-4">
@@ -54,28 +57,34 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link to="/plans" className={navigationMenuTriggerStyle()}>
+            <Link
+              to="/plans"
+              className={`${navigationMenuTriggerStyle()} font-extrabold text-[#11B856] hover:bg-[#11B856] hover:text-white`}
+            >
               Planos
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link to="/como-funciona" className={navigationMenuTriggerStyle()}>
+            <Link
+              to="/como-funciona"
+              className={`${navigationMenuTriggerStyle()} font-extrabold text-[#11B856] hover:bg-[#11B856] hover:text-white`}
+            >
               Como funciona
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  );
+  )
 }
 
 interface ListItemProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  className?: string;
-  title: string;
-  children: React.ReactNode;
-  to: string;
+  className?: string
+  title: string
+  children: React.ReactNode
+  to: string
 }
 
 const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
@@ -99,7 +108,7 @@ const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
           </Link>
         </NavigationMenuLink>
       </li>
-    );
-  }
-);
-ListItem.displayName = 'ListItem';
+    )
+  },
+)
+ListItem.displayName = 'ListItem'

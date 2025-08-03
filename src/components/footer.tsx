@@ -9,7 +9,8 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-xl font-bold">Facilita</h3>
             <p className="text-gray-400">
-              Serviços profissionais de contabilidade para o sucesso do seu negócio.
+              Serviços profissionais de contabilidade para o sucesso do seu
+              negócio.
             </p>
           </div>
 
@@ -42,7 +43,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-lg font-semibold">Informações de contato</h4>
+            <h4 className="mb-4 text-lg font-semibold">
+              Informações de contato
+            </h4>
             <ul className="space-y-2 text-gray-400">
               <li>Rua Costa Barros, 915, Sala 301</li>
               <li>Fortaleza, Ceará</li>
@@ -66,7 +69,10 @@ export function Footer() {
             <Link to="#" className="text-gray-400 hover:text-white">
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link to="https://www.instagram.com/facilitacontabilidadeoficial/" className="text-gray-400 hover:text-white">
+            <Link
+              to="https://www.instagram.com/facilitacontabilidadeoficial/"
+              className="text-gray-400 hover:text-white"
+            >
               <Instagram className="h-5 w-5" />
             </Link>
           </div>

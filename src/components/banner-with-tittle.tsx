@@ -7,7 +7,7 @@ import { Button } from './ui/button'
 export function BannerWithTittle() {
   return (
     <div className="flex w-full flex-col items-center justify-center py-24">
-      <p className="text-azul text-center text-4xl font-bold">
+      <p className="text-center text-4xl font-bold text-[#11B856]">
         Abrir empresa agora é com a Facilita
       </p>
       <div className="mt-10 flex w-full max-w-5xl flex-col items-start space-y-4 text-sm md:flex-row md:space-x-4 md:space-y-0 md:text-base">
@@ -37,7 +37,7 @@ export function BannerWithTittle() {
       <div className="mt-4 flex w-full max-w-3xl flex-row items-start px-4">
         <Button
           variant="outline"
-          className="bg-azul mr-4 text-white hover:bg-gray-600 md:flex"
+          className="mr-4 bg-azul text-white hover:bg-gray-600 md:flex"
         >
           <Link to="/abrir-empresa">Abrir empresa grátis</Link>
         </Button>

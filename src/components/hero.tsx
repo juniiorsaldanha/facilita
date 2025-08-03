@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="text-center lg:flex lg:items-center lg:justify-between lg:text-left">
           <div className="lg:w-1/2">
-            <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight text-[#11B856] sm:text-5xl lg:text-6xl">
               Soluções Contábeis para o Sucesso do Seu Negócio
             </h1>
             <p className="mt-6 max-w-2xl text-xl text-gray-600">
@@ -18,7 +18,11 @@ export default function Hero() {
               portes.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
-              <Button size="lg" asChild className="bg-azul">
+              <Button
+                size="lg"
+                asChild
+                className="border border-[#11B856] bg-[#11B856] hover:bg-white hover:text-[#11B856]"
+              >
                 <Link to="/abrir-empresa">
                   Fale Conosco <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -33,25 +37,27 @@ export default function Hero() {
               {/* Abstract shapes for visual interest */}
               <div className="absolute inset-0 -rotate-6 transform rounded-3xl bg-gradient-to-r from-primary/20 to-primary/5" />
               <div className="absolute inset-0 rotate-3 transform rounded-3xl bg-gradient-to-l from-primary/20 to-primary/5" />
-              <div className="relative rounded-2xl bg-white p-8 shadow-xl">
+              <div className="relative rounded-2xl bg-[#FF914D] p-8 shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="rounded-lg bg-primary/5 p-4">
+                  <div className="rounded-lg bg-white p-4 text-[#004AAD]">
                     <h3 className="font-bold">1000+</h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-[#004AAD]">
                       Clientes Satisfeitos
                     </p>
                   </div>
-                  <div className="rounded-lg bg-primary/5 p-4">
+                  <div className="rounded-lg bg-white p-4 text-[#004AAD]">
                     <h3 className="font-bold">20+</h3>
-                    <p className="text-sm text-gray-600">Anos de Experiência</p>
+                    <p className="text-sm text-[#004AAD]">
+                      Anos de Experiência
+                    </p>
                   </div>
-                  <div className="rounded-lg bg-primary/5 p-4">
+                  <div className="rounded-lg bg-white p-4 text-[#004AAD]">
                     <h3 className="font-bold">24/7</h3>
-                    <p className="text-sm text-gray-600">Suporte</p>
+                    <p className="text-sm text-[#004AAD]">Suporte</p>
                   </div>
-                  <div className="rounded-lg bg-primary/5 p-4">
+                  <div className="rounded-lg bg-white p-4 text-[#004AAD]">
                     <h3 className="font-bold">98%</h3>
-                    <p className="text-sm text-gray-600">Taxa de Retenção</p>
+                    <p className="text-sm text-[#004AAD]">Taxa de Retenção</p>
                   </div>
                 </div>
               </div>

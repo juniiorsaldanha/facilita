@@ -48,7 +48,7 @@ export function FAQPage({ page }: PropsType) {
               value={`${i}`}
               className="rounded-[0.75rem] p-3 hover:bg-[#d3e9dc]"
             >
-              <AccordionTrigger className="text-[24px] text-slate-600 hover:text-slate-950 hover:no-underline">
+              <AccordionTrigger className="text-[24px] text-[#FF914D] hover:text-slate-950 hover:no-underline">
                 {item.title}
               </AccordionTrigger>
               <AccordionContent className="text-justify text-lg text-slate-500">

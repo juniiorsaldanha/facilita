@@ -1,5 +1,6 @@
 import Image from '@/assets/banner4.png'
 import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom'
 
 export function TrocarContador() {
   const data = [
@@ -27,7 +28,7 @@ export function TrocarContador() {
 
   return (
     <article className="flex min-h-screen w-full flex-col items-center bg-white">
-      <section className="flex w-full flex-col items-center gap-6 bg-azul px-4 pb-20 pt-10 md:pb-32 md:pt-14">
+      <section className="flex w-full flex-col items-center gap-6 bg-[#11B856] px-4 pb-20 pt-10 md:pb-32 md:pt-14">
         <h1 className="text-center text-3xl font-semibold text-white md:text-5xl">
           Insatisfeito com seu Contador? Troque para a Facilita!
         </h1>
@@ -39,7 +40,7 @@ export function TrocarContador() {
         </p>
 
         <Button className="mt-6 rounded-full border border-gray-300 bg-white text-[#004AAD] hover:bg-white hover:text-gray-900">
-          Conheça nossos planos
+          <Link to="/plans">Conhecer nossos planos</Link>
         </Button>
       </section>
 
@@ -61,7 +62,7 @@ export function TrocarContador() {
 
       <div className="flex w-full max-w-5xl flex-col-reverse items-center justify-between gap-10 px-6 py-16 md:flex-row md:px-0 md:py-28">
         <div className="flex w-full flex-col gap-6 md:w-[500px]">
-          <h2 className="text-center text-2xl font-bold text-azul md:text-left md:text-3xl">
+          <h2 className="text-center text-2xl font-bold text-[#] md:text-left md:text-3xl">
             Nossos Planos
           </h2>
           <p className="text-center text-base font-medium text-blue-900 md:text-left md:text-lg">

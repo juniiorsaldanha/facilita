@@ -41,9 +41,9 @@ const plans = {
     },
     {
       title: 'Plano Ouro',
-      price: '389,00',
+      price: '349,00',
       oldPrice: '449,00',
-      discount: 'ECONOMIZE 13%',
+      discount: 'ECONOMIZE 22%',
       destaque: null,
       benefits: benefitsList.map((benefit, index) => ({
         text: benefit,

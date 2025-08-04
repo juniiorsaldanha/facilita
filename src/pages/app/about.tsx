@@ -59,14 +59,14 @@ export function About() {
               <Link to={item.link}>
                 <Card className="h-[400px] w-full sm:w-[280px]">
                   <CardContent className="flex flex-col items-start justify-center gap-6 p-6">
-                    <h1 className="text-xl font-semibold text-gray-900">
+                    <h1 className="text-xl font-semibold text-[#11B856]">
                       {item.titulo}
                     </h1>
                     <span className="text-sm text-gray-700">
                       {item.descricao}
                     </span>
                     <div className="flex items-center">
-                      <span className="flex items-center text-gray-900 underline">
+                      <span className="flex items-center text-[#FF914D] underline">
                         Saiba mais
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

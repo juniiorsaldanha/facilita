@@ -60,11 +60,6 @@ export function OpenCompany() {
       location: [-3.7281863612750463, -38.51556091895315] as LocationType,
       address: 'Rua Costa Barros, 915, Sala 30',
     },
-    {
-      id: '2',
-      location: [-5.890377233489384, -38.62126426153381] as LocationType,
-      address: 'Rua Dom Carloto, 399',
-    },
   ]
 
   const [selectedLocation, setSelectedLocation] = useState(addresses[0])
@@ -72,7 +67,7 @@ export function OpenCompany() {
   return (
     <main className="flex w-full flex-col p-6">
       <div className="flex w-full flex-col items-center justify-center">
-        <span className="text-center text-4xl font-bold text-[#004AAD]">
+        <span className="text-center text-4xl font-bold text-[#11B856]">
           Entre em contato
         </span>
         <p className="text-center text-lg text-[#004AAD]">
@@ -144,8 +139,8 @@ export function OpenCompany() {
         </div>
 
         <article className="flex w-full max-w-full flex-col items-center gap-4 md:max-w-lg">
-          <span className="text-center text-2xl font-semibold text-[#004AAD]">
-            Nossos escritórios
+          <span className="text-center text-2xl font-semibold text-[#11B856]">
+            Nosso escritório
           </span>
           <div className="flex flex-wrap justify-center gap-3">
             {addresses.map((item) => (
@@ -153,7 +148,7 @@ export function OpenCompany() {
                 key={item.id}
                 onClick={() => setSelectedLocation(item)}
                 className={`flex cursor-pointer items-center justify-center rounded-full border px-4 py-2 text-center text-sm
-                  ${selectedLocation.id === item.id ? 'border-white bg-[#11B856] text-white' : 'border-[#FF914D] text-[#FF914D] hover:bg-[#FF914D] hover:text-[#004AAD]'}`}
+                  ${selectedLocation.id === item.id ? 'border-white bg-[#004AAD] text-white' : 'border-[#FF914D] text-[#FF914D] hover:bg-[#FF914D] hover:text-[#004AAD]'}`}
               >
                 {item.address}
               </div>

@@ -36,7 +36,7 @@ export function Home() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-3xl font-bold text-[#11B856]">
               Por que escolher a Facilita?
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -51,7 +51,7 @@ export function Home() {
                 className="flex flex-col items-center p-6 text-center"
               >
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                  <advantage.icon className="h-8 w-8 text-[#11B856] text-primary" />
+                  <advantage.icon className="h-8 w-8 text-[#11B856]" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold">
                   {advantage.title}

@@ -58,7 +58,7 @@ export default function Services() {
     <section className="bg-gray-50 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Nossos Serviços</h2>
+          <h2 className="text-3xl font-bold text-[#11B856]">Nossos Serviços</h2>
           <p className="mt-4 text-lg text-gray-600">
             Soluções completas para todas as necessidades do seu negócio
           </p>

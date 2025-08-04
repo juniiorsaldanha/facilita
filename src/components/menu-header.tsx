@@ -17,7 +17,7 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList className="flex-col items-start gap-4 md:flex-row">
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-white font-extrabold text-[#11B856] hover:bg-[#11B856] hover:text-white">
+          <NavigationMenuTrigger className="bg-white text-[#11B856] hover:bg-[#11B856] hover:text-white">
             Serviços
           </NavigationMenuTrigger>
           <NavigationMenuContent>

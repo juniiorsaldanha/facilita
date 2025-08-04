@@ -1,5 +1,5 @@
-import Img from '@/assets/img-certificado.png'
-import { Button } from '@/components/ui/button'
+import Img from "@/assets/img-certificado.png";
+import { Button } from "@/components/ui/button";
 
 export function CertificadoDigital() {
   return (
@@ -12,12 +12,18 @@ export function CertificadoDigital() {
           <span>
             Garanta seu certificado digital com a Facilita agora mesmo!
           </span>
-          <Button className="h-12 w-[250px] border-2 border-[#11B856] bg-white font-semibold text-[#11B856] hover:bg-[#11B856] hover:text-white">
-            Garantir Certificado Digital
-          </Button>
+          <a
+            target="_blank"
+            href="https://wa.me/5511993953519?text=Desejo%20saber%20como%20garantir%20o%20certificado%20digital"
+            rel="noreferrer"
+          >
+            <Button className="h-12 w-[250px] border-2 border-[#11B856] bg-white font-semibold text-[#11B856] hover:bg-[#11B856] hover:text-white">
+              Garantir Certificado Digital
+            </Button>
+          </a>
         </div>
         <img src={Img} alt="banner" className="h-[28.125rem] w-[28.125rem]" />
       </div>
     </article>
-  )
+  );
 }

@@ -42,7 +42,7 @@ export default function Testimonials() {
     <section className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-gray-900">
+          <h2 className="text-3xl font-bold text-[#11B856]">
             O que nossos clientes dizem
           </h2>
           <p className="mt-4 text-lg text-gray-600">

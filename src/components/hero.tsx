@@ -40,7 +40,7 @@ export default function Hero() {
               <div className="relative rounded-2xl bg-[#FF914D] p-8 shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-lg bg-white p-4 text-[#004AAD]">
-                    <h3 className="font-bold">2000+</h3>
+                    <h3 className="font-bold">3000+</h3>
                     <p className="text-sm text-[#004AAD]">
                       Clientes Satisfeitos
                     </p>

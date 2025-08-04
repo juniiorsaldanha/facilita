@@ -47,7 +47,8 @@ const services = [
   },
   {
     title: 'Certificado Digital',
-    description: 'Assinatura eletrônica segura para acesso a serviços do governo e emissão de documentos fiscais.',
+    description:
+      'Assinatura eletrônica segura para acesso a serviços do governo e emissão de documentos fiscais.',
     icon: Shield,
   },
 ]
@@ -71,7 +72,7 @@ export default function Services() {
             >
               <CardHeader>
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                  <service.icon className="h-6 w-6 text-azul" />
+                  <service.icon className="h-6 w-6 text-[#11B856]" />
                 </div>
                 <CardTitle className="mb-2 text-xl">{service.title}</CardTitle>
                 <CardDescription>{service.description}</CardDescription>

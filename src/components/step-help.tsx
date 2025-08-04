@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+
 import { Button } from './ui/button'
 import { Separator } from './ui/separator'
 
@@ -12,7 +13,7 @@ export default function StepHelp() {
       <div className="flex w-full max-w-4xl flex-col items-center">
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
           <div className="flex flex-col items-center">
-            <div className="bg-azul flex h-12 w-12 items-center justify-center rounded-full text-xl font-semibold text-white">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#11B856] text-xl font-semibold text-white">
               1
             </div>
             <span className="mt-4 w-72 text-center font-medium text-gray-500">
@@ -27,7 +28,7 @@ export default function StepHelp() {
           />
 
           <div className="flex flex-col items-center">
-            <div className="bg-azul flex h-12 w-12 items-center justify-center rounded-full text-xl font-semibold text-white">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#11B856] text-xl font-semibold text-white">
               2
             </div>
             <span className="mt-4 w-72 text-center font-medium text-gray-500">
@@ -42,7 +43,7 @@ export default function StepHelp() {
           />
 
           <div className="flex flex-col items-center">
-            <div className="bg-azul flex h-12 w-12 items-center justify-center rounded-full text-xl font-semibold text-white">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#11B856] text-xl font-semibold text-white">
               3
             </div>
             <span className="mt-4 w-72 text-center font-medium text-gray-500">
@@ -57,18 +58,18 @@ export default function StepHelp() {
             target="_blank"
             href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20deixar%20de%20ser%20MEI"
             rel="noreferrer"
-            className='w-full max-w-sm'
+            className="w-full max-w-sm"
           >
-          <Button
-            variant="default"
-            className="bg-azul h-11 w-60 rounded-3xl text-lg font-medium hover:bg-gray-700"
-          >
+            <Button
+              variant="default"
+              className="h-11 w-60 rounded-3xl border border-[#11B856] bg-[#11B856] text-lg font-medium hover:bg-white hover:text-[#11B856]"
+            >
               Entrar em contato
-          </Button>
+            </Button>
           </a>
           <Button
             variant="outline"
-            className="h-11 w-60 rounded-3xl text-lg font-medium"
+            className="h-11 w-60 rounded-3xl border border-[#FF914D] bg-[#FF914D] text-lg font-medium text-white hover:bg-white hover:text-[#FF914D]"
           >
             <Link to="/plans">Conhecer nossos planos</Link>
           </Button>

@@ -66,7 +66,7 @@ export default function Testimonials() {
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className="h-4 w-4 fill-primary text-azul"
+                          className="h-4 w-4 fill-[#11B856] text-[#11B856]"
                         />
                       ))}
                     </div>

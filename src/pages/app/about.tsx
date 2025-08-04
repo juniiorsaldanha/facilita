@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import {
@@ -7,7 +9,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
-import { Link } from 'react-router-dom'
 
 export function About() {
   const data = [
@@ -43,7 +44,7 @@ export function About() {
 
   return (
     <div className="flex w-full flex-col items-center justify-center bg-slate-100 px-4 py-12 sm:py-24">
-      <h1 className="mb-10 text-center text-3xl font-semibold text-azul sm:text-4xl">
+      <h1 className="mb-10 text-center text-3xl font-semibold text-[#11B856] sm:text-4xl">
         Como funciona a Facilita?
       </h1>
       <Carousel
@@ -95,20 +96,20 @@ export function About() {
       <div className="flex w-full flex-col items-center justify-center gap-4 pt-12 sm:flex-row">
         <a
           target="_blank"
-          href='https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos.'
+          href="https://wa.me/5511993953519?text=Desejo%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos."
           rel="noreferrer"
-          className='w-60'
+          className="w-60"
         >
-        <Button
-          variant="default"
-          className="h-11 w-60 rounded-3xl bg-azul text-lg font-medium hover:bg-gray-700"
-        >
+          <Button
+            variant="default"
+            className="h-11 w-60 rounded-3xl border border-[#11B856] bg-[#11B856] text-lg font-medium hover:border-[#11B856] hover:bg-white hover:text-[#11B856]"
+          >
             Entrar em contato
-        </Button>
-          </a>
+          </Button>
+        </a>
         <Button
           variant="outline"
-          className="h-11 w-60 rounded-3xl text-lg font-medium"
+          className="h-11 w-60 rounded-3xl border border-[#FF914D] bg-[#FF914D] text-lg font-medium text-white hover:bg-white hover:text-[#FF914D]"
         >
           <Link to="/plans">Conhecer nossos planos</Link>
         </Button>

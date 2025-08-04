@@ -88,8 +88,8 @@ export function EssencialPlans() {
               value={tab}
               className="w-full flex-none whitespace-nowrap rounded-md px-4 py-2 text-center text-lg
                 font-bold transition-all duration-200
-                hover:text-azul hover:underline data-[state=active]:bg-gradient-to-br 
-                data-[state=active]:from-[#03286B] data-[state=active]:to-[#065AD8] 
+                hover:text-[#11B856] hover:underline data-[state=active]:bg-gradient-to-br 
+                data-[state=active]:from-[#11B856] data-[state=active]:to-[#82cfa2] 
                 data-[state=active]:text-white data-[state=active]:shadow-md md:w-auto"
             >
               {tab}

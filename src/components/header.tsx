@@ -112,9 +112,6 @@ export function Header() {
                         <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
                           <Link to="/trocar-contador">Trocar de contador</Link>
                         </li>
-                        <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
-                          <Link to="#">Contabilidade completa</Link>
-                        </li>
                       </ul>
                     </div>
                   </div>

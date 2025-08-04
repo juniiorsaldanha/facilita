@@ -70,7 +70,7 @@ export function Footer() {
               <Linkedin className="h-5 w-5" />
             </Link>
             <Link
-              to="https://www.instagram.com/facilitacontabilidadeoficial/"
+              to="https://www.instagram.com/facilitacontab/"
               className="text-gray-400 hover:text-white"
             >
               <Instagram className="h-5 w-5" />

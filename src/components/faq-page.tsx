@@ -37,7 +37,7 @@ export function FAQPage({ page }: PropsType) {
     <div
       className={`flex w-full flex-col items-center justify-center ${page === 'plans' ? 'bg-white' : 'bg-slate-100'}  py-24`}
     >
-      <p className="text-azul text-center text-4xl font-bold">
+      <p className="text-center text-4xl font-bold text-[#11B856]">
         Perguntas Frequentes
       </p>
       <div className="mt-10 w-full max-w-3xl">
@@ -46,7 +46,7 @@ export function FAQPage({ page }: PropsType) {
             <AccordionItem
               key={i}
               value={`${i}`}
-              className="rounded-[0.75rem] p-3 hover:bg-slate-200"
+              className="rounded-[0.75rem] p-3 hover:bg-[#d3e9dc]"
             >
               <AccordionTrigger className="text-[24px] text-slate-600 hover:text-slate-950 hover:no-underline">
                 {item.title}

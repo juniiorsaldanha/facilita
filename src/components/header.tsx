@@ -57,7 +57,7 @@ export function Header() {
         <div className="ml-auto flex items-center gap-2">
           <Button
             variant="default"
-            className="hidden rounded-3xl bg-azul hover:bg-gray-700 md:flex"
+            className="hidden rounded-3xl border border-[#11B856] bg-[#11B856] hover:bg-white hover:text-[#11B856] md:flex"
           >
             <Link to="/abrir-empresa">Solicite uma proposta</Link>
           </Button>
@@ -102,7 +102,9 @@ export function Header() {
                           <Link to="/abrir-empresa">Abrir Empresa grátis</Link>
                         </li>
                         <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
-                          <Link to="/certificado-digital">Certificado digital</Link>
+                          <Link to="/certificado-digital">
+                            Certificado digital
+                          </Link>
                         </li>
                         <li className="under p-3 text-azul hover:text-gray-400 hover:underline">
                           <Link to="/deixar-de-ser-mei">Deixar de ser MEI</Link>
@@ -131,7 +133,7 @@ export function Header() {
                 </nav>
                 <Button
                   variant="default"
-                  className="rounded-3xl bg-azul hover:bg-gray-700 md:flex"
+                  className="rounded-3xl bg-[#11B856] hover:bg-gray-700 md:flex"
                 >
                   Solicite uma Proposta
                 </Button>

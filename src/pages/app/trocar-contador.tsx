@@ -27,7 +27,7 @@ export function TrocarContador() {
 
   return (
     <article className="flex min-h-screen w-full flex-col items-center bg-white">
-      <section className="bg-azul flex w-full flex-col items-center gap-6 px-4 pb-20 pt-10 md:pb-32 md:pt-14">
+      <section className="flex w-full flex-col items-center gap-6 bg-azul px-4 pb-20 pt-10 md:pb-32 md:pt-14">
         <h1 className="text-center text-3xl font-semibold text-white md:text-5xl">
           Insatisfeito com seu Contador? Troque para a Facilita!
         </h1>
@@ -38,7 +38,7 @@ export function TrocarContador() {
           gestão financeira da sua empresa.
         </p>
 
-        <Button className="bg-dourado-degrade mt-6 rounded-full border border-gray-300 text-white hover:bg-white hover:text-gray-900">
+        <Button className="mt-6 rounded-full border border-gray-300 bg-white text-[#004AAD] hover:bg-white hover:text-gray-900">
           Conheça nossos planos
         </Button>
       </section>
@@ -49,7 +49,7 @@ export function TrocarContador() {
             key={item.id}
             className="flex h-32 w-full flex-col items-center justify-center gap-4 rounded-lg border border-gray-200 bg-gray-50 p-4 md:w-60"
           >
-            <p className="text-azul text-center text-lg font-bold">
+            <p className="text-center text-lg font-bold text-azul">
               {item.title}
             </p>
             <p className="text-center text-sm text-blue-900">
@@ -61,7 +61,7 @@ export function TrocarContador() {
 
       <div className="flex w-full max-w-5xl flex-col-reverse items-center justify-between gap-10 px-6 py-16 md:flex-row md:px-0 md:py-28">
         <div className="flex w-full flex-col gap-6 md:w-[500px]">
-          <h2 className="text-azul text-center text-2xl font-bold md:text-left md:text-3xl">
+          <h2 className="text-center text-2xl font-bold text-azul md:text-left md:text-3xl">
             Nossos Planos
           </h2>
           <p className="text-center text-base font-medium text-blue-900 md:text-left md:text-lg">

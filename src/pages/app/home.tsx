@@ -51,7 +51,7 @@ export function Home() {
                 className="flex flex-col items-center p-6 text-center"
               >
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                  <advantage.icon className="h-8 w-8 text-azul text-primary" />
+                  <advantage.icon className="h-8 w-8 text-[#11B856] text-primary" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold">
                   {advantage.title}

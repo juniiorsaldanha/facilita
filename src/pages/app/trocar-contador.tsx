@@ -1,4 +1,4 @@
-import Image from '@/assets/img-equipe.png'
+import Image from '@/assets/banner4.png'
 import { Button } from '@/components/ui/button'
 
 export function TrocarContador() {

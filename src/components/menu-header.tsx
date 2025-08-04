@@ -48,10 +48,6 @@ export function NavigationMenuDemo() {
               <ListItem to="/trocar-contador" title="Trocar de contador">
                 Descubra o processo simplificado para trocar de contador
               </ListItem>
-              <ListItem to="/" title="Contabilidade completa">
-                Descubra tudo sobre contabilidade em nosso site: informações
-                completas para uma gestão financeira eficiente.
-              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
